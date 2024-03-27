@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "3bdf4a38-49e8-4168-a65a-2cec1a714fdf",
+		"name": "user-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11930116"
+	},
+	"item": [
+		{
+			"name": "User Registration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"pqr@gmail.com\", \"password\":\"123456\", \"name\":\"secondUser\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"abc@gmail.com\", \"password\":\"123456\", \"name\":\"firstUser\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiY0BnbWFpbC5jb20iLCJuYW1lIjoiZmlyc3RVc2VyIiwiX2lkIjoiNjYwM2QyY2ZkZjQ5M2UxNzNmZDJmZWI4IiwiaWF0IjoxNzExNTI2NjI3LCJleHAiOjE3MTE1Njk4Mjd9.Ar3slFeoHzGxAIwS9f5m7CFDVPs1wx4qPYWABC3vXsU"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/user/6603d2cfdf493e173fd2feb8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"6603d2cfdf493e173fd2feb8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiY0BnbWFpbC5jb20iLCJuYW1lIjoiZmlyc3RVc2VyIiwiX2lkIjoiNjYwM2QyY2ZkZjQ5M2UxNzNmZDJmZWI4IiwiaWF0IjoxNzExNTI2NjI3LCJleHAiOjE3MTE1Njk4Mjd9.Ar3slFeoHzGxAIwS9f5m7CFDVPs1wx4qPYWABC3vXsU"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
